@@ -1,0 +1,43 @@
+.App{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+
+  input{
+    width: 350px;
+    border-radius: 10px;
+    padding: 8px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 10px 12px 6px rgba(34, 60, 80, 0.3);
+    margin-top: 20px;
+  }
+
+}
+.item{
+  border: 2px solid;
+  margin: 20px 0;
+  border-radius: 10px;
+  background-color: #87ca3e;
+  box-shadow: 0px 10px 12px 6px rgba(34, 60, 80, 0.3);
+
+
+}
+.drop{
+  animation: pulsing .2s;
+}
+@keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5)
+  }
+  50% {
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+  }
+  100% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+}
