@@ -2,26 +2,12 @@ import './style.scss';
 
 import {useEffect, useState} from "react";
 import AddressItem from "./Component/AddressItem";
+import {data} from "./addres";
 
 function App() {
     const [value,setValue] = useState('');
 
-    const data = [{
-       address:'Ленина',
-        price:34
-    },
-        {
-            address:'Мира',
-            price:31
-        },
-        {
-            address:'Ленина',
-            price:32
-        },
-        {
-            address:'1го мая',
-            price:3
-        }]
+
     const [address, setState] = useState([]);
     const getState = () => {
         setState(data);
@@ -31,12 +17,14 @@ function App() {
         getState();
     }, []);
      const filteredAddress = address.filter(el=>{
-         return el.address.toLowerCase().includes(value.toLowerCase())
-     })
+         return el.address.toLowerCase().includes(value.toLowerCase()) || el.location.toLowerCase().includes(value.toLowerCase());
+     }
+)
 
     return (
         <div className="App">
             <h2>Начните набирать адресс:</h2>
+            <div>Найдено адрессов: {filteredAddress.length}</div>
             <input  type="text" onChange={(e)=> {
                 let className = 'drop';
                 e.currentTarget.classList.add(className)
