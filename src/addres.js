@@ -382,28 +382,23 @@ export const data = [
         location: 'Великодолинское'
     },
     {
-        address: 'Волна 1-2 линия',
+        address: 'Волна 1-10 линия',
         price: 85,
         location: 'Великодолинское'
     },
     {
-        address: 'Волна 3-10 линия',
+        address: 'Волна 11-20 линия',
         price: 100,
         location: 'Великодолинское'
     },
     {
-        address: 'Волна 11-20 линия',
+        address: 'Волна 21-30 линия',
         price: 110,
         location: 'Великодолинское'
     },
     {
-        address: 'Волна 21-30 линия',
-        price: 140,
-        location: 'Великодолинское'
-    },
-    {
-        address: 'Волна 31-33 линия',
-        price: 150,
+        address: 'Волна заезд на линии',
+        price: '+30',
         location: 'Великодолинское'
     },
     {
